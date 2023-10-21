@@ -1,0 +1,114 @@
+/* Định dạng cho phần tiêu đề h1 */
+h1 {
+    font-size: 1.8rem; /* Kích thước phông chữ 1.8rem (tương đương khoảng 28px) */
+    color: rgb(240, 244, 242); /* Màu chữ trắng */
+    text-align: center; /* Canh giữa văn bản */
+}
+
+/* Định dạng cho phần tiêu đề h2 */
+h2 {
+    font-size: 1.1rem; /* Kích thước phông chữ 1.1rem (tương đương khoảng 17px) */
+    color: rgb(234, 50, 13); /* Màu chữ là một màu hỗn hợp của đỏ và xanh lam */
+    text-align: center; /* Canh giữa văn bản */
+}
+.custom-heading {
+    position: absolute; /* Đặt vị trí tuyệt đối để tùy chỉnh tọa độ */
+    top: 75px; /* Điều chỉnh khoảng cách từ phía trên xuống (có thể điều chỉnh) */
+    left: 30px; /* Điều chỉnh khoảng cách từ phía trái qua (có thể điều chỉnh) */
+    width: 200px; /* Điều chỉnh độ rộng của thẻ h4 (có thể điều chỉnh) */
+    font-size: 1rem; /* Điều chỉnh kích thước phông chữ (có thể điều chỉnh) */
+    font-weight: bold; /* Điều chỉnh độ đậm của phông chữ (có thể điều chỉnh) */
+}
+
+.custom-paragraph {
+    position: absolute; /* Đặt vị trí tuyệt đối để tùy chỉnh tọa độ */
+    top: 80px; /* Điều chỉnh khoảng cách từ phía trên xuống (có thể điều chỉnh) */
+    left: 1430px; /* Điều chỉnh khoảng cách từ phía trái qua (có thể điều chỉnh) */
+    width: 200px; /* Điều chỉnh độ rộng của thẻ p (có thể điều chỉnh) */
+    font-size: 1rem; /* Điều chỉnh kích thước phông chữ (có thể điều chỉnh) */
+}
+
+
+/* Định dạng cho phần topnav (thanh đầu trang) */
+.topnav {
+    overflow: hidden; /* Ẩn phần nội dung vượt ra ngoài khỏi thanh đầu trang */
+    background-color: #21d011; /* Màu nền là màu xanh lá cây */
+}
+
+/* Định dạng cho phần midnav (thanh giữa trang) */
+.midnav {
+    overflow: hidden; /* Ẩn phần nội dung vượt ra ngoài khỏi thanh giữa trang */
+    background-color: #11dbd4; /* Màu nền là màu xanh lam */
+}
+
+/* Định dạng cho các thẻ "card" */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Hiển thị bóng cho thẻ "card" */
+    transition: 0.3s; /* Tạo hiệu ứng chuyển đổi trong 0.3 giây */
+    border-radius: 5px; /* Bo góc 5px cho thẻ "card" */
+    background-color: rgb(237, 242, 245); /* Màu nền là màu trắng */
+    box-shadow: 2px 2px 12px 1px rgba(7, 219, 128, 0.5); /* Hiển thị bóng cho thẻ "card" */
+}
+
+/* Định dạng cho thẻ "card" khi di chuột vào */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); /* Hiển thị bóng lớn hơn khi di chuột vào */
+}
+
+/* Định dạng cho phần nội dung container */
+.container {
+    padding: 1.5px 16px;
+    /*width: 35%; /* Điều chỉnh chiều rộng của phần tử chứa biểu đồ (có thể điều chỉnh) */
+    /*height: 10%; /* Điều chỉnh chiều cao của phần tử chứa biểu đồ (có thể điều chỉnh) */
+  
+}
+
+/* Định dạng cho các phần tử biểu đồ (chart-container) */
+.chart-container {
+    display: inline-block; /* Hiển thị các phần tử cùng hàng ngang */
+    width: 33%; /* Đặt chiều rộng của mỗi phần tử là 1/3 chiều rộng tổng cộng */
+    padding: 20px; /* Thêm khoảng cách xung quanh các biểu đồ */
+    box-sizing: border-box; /* Đảm bảo rằng padding không tăng kích thước tổng cộng của phần tử */
+    text-align: center; /* Căn giữa nội dung trong phần tử */
+    min-height: 35vh; /* Để biểu đồ xuất hiện giữa màn hình */
+}
+
+/* ------------------Định dạng cho hiển thị giá trị-------------------- */
+
+.value-container {
+    display: flex;
+    justify-content: space-around;
+    color: rgb(10, 216, 31);
+    background-color: rgba(238, 119, 119, 0.1); /* Màu nền của khung chữ nhật */
+    padding: 10px; /* Khoảng cách xung quanh khung chữ nhật */
+    border-radius: 5px; /* Bo góc khung chữ nhật */
+    margin-top: 20px; /* Khoảng cách từ khung chữ nhật đến biểu đồ */
+
+
+}
+
+.value {
+    text-align: center;
+}
+
+.value-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-right: 5px; /* Khoảng cách giữa tiêu đề và giá trị */
+}
+
+.value span {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.centered {
+
+    position: absolute; /* Sử dụng vị trí tuyệt đối để tùy chỉnh tọa độ */
+    top: 530px; /* Điều chỉnh khoảng cách từ phía trên xuống (có thể điều chỉnh) */
+    right: 60px; /* Điều chỉnh khoảng cách từ phía phải qua (có thể điều chỉnh) */
+
+    width: 35%; /* Điều chỉnh chiều rộng của phần tử chứa biểu đồ (có thể điều chỉnh) */
+    height: 15%; /* Điều chỉnh chiều cao của phần tử chứa biểu đồ (có thể điều chỉnh) */
+  
+  }
