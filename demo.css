@@ -105,10 +105,82 @@ h2 {
 .centered {
 
     position: absolute; /* Sử dụng vị trí tuyệt đối để tùy chỉnh tọa độ */
-    top: 530px; /* Điều chỉnh khoảng cách từ phía trên xuống (có thể điều chỉnh) */
+    top: 500px; /* Điều chỉnh khoảng cách từ phía trên xuống (có thể điều chỉnh) */
     right: 60px; /* Điều chỉnh khoảng cách từ phía phải qua (có thể điều chỉnh) */
 
     width: 35%; /* Điều chỉnh chiều rộng của phần tử chứa biểu đồ (có thể điều chỉnh) */
     height: 15%; /* Điều chỉnh chiều cao của phần tử chứa biểu đồ (có thể điều chỉnh) */
   
   }
+
+/*------------------------MENU-----------------------*/
+/* Đặt margin và padding về 0 cho tất cả phần tử ul và li */
+.dropdownmenu ul, .dropdownmenu li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Đặt màu nền xám cho danh sách ul và loại bỏ dấu chấm mặc định */
+.dropdownmenu ul {
+    background: gray;
+    list-style: none;
+}
+
+/* Đặt dạng dòng (float: left) và vị trí tương đối cho mục li */
+.dropdownmenu li {
+    float: left;
+    position: relative;
+    width: auto; /* Tự động tính toán chiều rộng */
+}
+
+/* Đặt các quy tắc cho phần tử a bên trong menu */
+.dropdownmenu a {
+    background: #30A6E6; /* Đặt màu nền xanh cho nút */
+    color: #FFFFFF; /* Đặt màu chữ trắng */
+    display: block; /* Hiển thị thành khối (block) */
+    font: bold 12px/20px sans-serif; /* Đặt kiểu chữ, độ đậm và kích thước */
+    padding: 10px 25px; /* Đặt khoảng cách bên trong nút */
+    text-align: center; /* Căn giữa văn bản */
+    text-decoration: none; /* Loại bỏ gạch chân dưới */
+    -webkit-transition: all .25s ease; /* Hiệu ứng chuyển đổi cho trình duyệt Webkit (Safari, Chrome) */
+    -moz-transition: all .25s ease; /* Hiệu ứng chuyển đổi cho trình duyệt Mozilla (Firefox) */
+    -ms-transition: all .25s ease; /* Hiệu ứng chuyển đổi cho trình duyệt Microsoft (IE) */
+    -o-transition: all .25s ease; /* Hiệu ứng chuyển đổi cho trình duyệt Opera */
+    transition: all .25s ease; /* Hiệu ứng chuyển đổi chuẩn */
+}
+
+/* Đặt màu nền đen cho nút khi di chuột qua (hover) */
+.dropdownmenu li:hover a {
+    background: #000000;
+}
+
+
+
+
+#submenu {
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	top: 35px;
+	visibility: hidden;
+	z-index: 1;
+
+    width: 500px; 
+    height: 200px;
+}
+li:hover ul#submenu {
+	opacity: 1;
+	top: 40px;	/* adjust this as per top nav padding top & bottom comes */
+	visibility: visible;
+}
+#submenu li {
+	float: none;
+	width: 100%;
+}
+#submenu a:hover {
+	background: #DF4B05;
+}
+#submenu a {
+
+	background-color:#1dbde1;
+}

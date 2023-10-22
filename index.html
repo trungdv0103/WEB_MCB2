@@ -2,7 +2,7 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>WEB_MCB</title>
+  <title>Web_Charts_F2</title>
   <link rel="stylesheet" href="./demo.css">
 
 </head>
@@ -15,26 +15,20 @@
         <h2>ESP32 SSE</h2>
     </div>
        
-<!-- partial:index.partial.html -->
+  <!-- partial:index.partial.html -->
 
-<div class="content">
+ <div class="content">
 	<div class="card">
 		<div class="container">
             
 			<h4 class="custom-heading"><b>Design by DVT</b></h4>
             <p id="demo" class="custom-paragraph"></p>
 
-
-            
             <div class="chart-container" id="chart_div_temp"></div>
             <div class="chart-container" id="chart_div_hum"></div>
             <div class="chart-container" id="chart_div_pres"></div>
-<!--
-			<div id="chart_div_temp" style="width: 200px; height: 250px;"></div>
-			<div id="chart_div_hum" style="width: 200px; height: 250px;"></div>
-			<div id="chart_div_pres" style="width: 200px; height: 250px;"></div>
--->             
-<!------------------------------------------------------------------------------->
+        
+    <!------------------------------------------------------------------------------->
             <div class="value-container">
                 <div class="value">
                     <span class="value-title">Nhiệt độ:</span>
@@ -51,7 +45,7 @@
                     <span id="pres-value">00 hPa</span>
                 </div>
             </div>
-<!------------------------------------------------------------------------------->
+      <!------------------------------------------------------------------------------->
             
             <div style="width: 30%;" class="centered">
                 
@@ -61,15 +55,40 @@
 
 		</div>
 	</div>
-</div>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js'></script><script  src="./script.js"></script>
+ </div>
+ <!--------------------------------------------partial ------------------------------------------>
+ <nav class="dropdownmenu">
+    <ul>
+        <li><a href="https://console.firebase.google.com/u/0/project/esp32firebaseenxuto-74f23/database/esp32firebaseenxuto-74f23-default-rtdb/data" target="_blank">FireBase</a></li>
+        <li><a href="https://github.com/trungdv0103/WEB_MCB1/settings/pages" target="_blank">Github_Pages</a></li>
+         <li><a href="https://docs.google.com/spreadsheets/d/1DdgUF3s6K4OwjtHGZCyu-zV04BYTw9sVJF82FEbUX0I/edit#gid=1353236419" target="_blank">Data_Sheet</a></li>
+        
+        <li>
+            <a href="#">Introduction</a>
+            <ul id="submenu">
+                <li><a>Thành viên nhóm</a></li>
+                <li><a>Chúng tôi là một nhóm phát triển sáng tạo và đam mê.</a></li>
+                <li><a>Chúng tôi tạo ra các ứng dụng và dự án tuyệt vời.</a></li>
+                <li><a>Đội ngũ chúng tôi có kinh nghiệm rộng lớn và sáng tạo.</a></li>
+                <li><a>Xin cảm ơn bạn đã ghé thăm trang web của chúng tôi!</a></li>
+            </ul>
+        </li>
 
-<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
-<!-- partial -->
-<script src='https://cdn.amcharts.com/lib/4/core.js'></script>
-<script src='https://cdn.amcharts.com/lib/4/charts.js'></script>
-<script src='https://cdn.amcharts.com/lib/4/themes/animated.js'></script><script  src="./demo.js"></script>
+       
+        <li><a href="https://www.facebook.com/" target="_blank">Contact Us</a></li>
+    </ul>
+</nav>
+
+ <!--------------------------------------------partial ------------------------------------------>
+ 
+ <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js'></script><script  src="./script.js"></script>
+
+ <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+ <!-- partial -->
+ <script src='https://cdn.amcharts.com/lib/4/core.js'></script>
+ <script src='https://cdn.amcharts.com/lib/4/charts.js'></script>
+ <script src='https://cdn.amcharts.com/lib/4/themes/animated.js'></script><script  src="./demo.js"></script>
 
 </body>
 </html>
