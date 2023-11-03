@@ -84,7 +84,7 @@ am4core.ready(function () {
   var axisPres = chartPres.xAxes.push(new am4charts.ValueAxis());    // Tạo một trục dựa trên biểu đồ và lưu vào biến axisPres
 
   axisPres.min = 0;
-  axisPres.max = 500;
+  axisPres.max = 1500;
 
   axisPres.strictMinMax = true;    // Đảm bảo giá trị trên trục áp suất không vượt quá khoảng từ min đến max
 
